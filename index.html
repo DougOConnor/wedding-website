@@ -13,7 +13,9 @@
    hideFooter = function() {
     document.getElementsByClassName("footer")[0].style.display = "none";
   };
-  
+    var intervalId = window.setInterval(function(){
+    hideFooter()
+  }, 1000);
 </script>
   </head>
   <body onload="hideFooter()">
